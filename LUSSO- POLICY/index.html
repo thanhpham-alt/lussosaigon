@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Bảo Mật - Lusso Saigon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-font: 'Be Vietnam Pro', sans-serif;
+            --text-color: #83062a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ─── FIXED LAYOUT ─── */
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Prevent page scroll */
+        }
+
+        body {
+            font-family: var(--primary-font);
+            line-height: 1.8;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Desktop background */
+        @media (min-width: 769px) {
+            body {
+                background-image: url('bg-desktop.png');
+            }
+        }
+
+        /* Mobile background */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('bg-mobile.png');
+            }
+        }
+
+        /* ─── HEADER (No background/blur) ─── */
+        header {
+            flex-shrink: 0;
+            text-align: center;
+            padding: 35px 40px 10px;
+            background: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        }
+
+        .logo {
+            max-width: 153px;
+            height: auto;
+            display: block;
+            margin: -5px auto 10px;
+        }
+
+        header h1 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ─── CENTERING WRAPPER ─── */
+        .page-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px 40px 15vh; /* Reserving space for the train */
+            min-height: 0;
+        }
+
+        /* ─── THE FIXED INTERNAL SCROLL BOX ─── */
+        .policy-body {
+            width: 90%;
+            max-width: 1200px;
+            max-height: 100%;
+            padding: 36px 48px;
+            border: 1px solid rgba(131, 6, 42, 0.25);
+            background: rgba(255, 255, 255, 0.12);
+            overflow-y: auto;
+            border-radius: 4px;
+        }
+
+        /* Custom Scrollbar - Simple and clean */
+        .policy-body::-webkit-scrollbar {
+            width: 5px;
+        }
+        .policy-body::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .policy-body::-webkit-scrollbar-thumb {
+            background: rgba(131, 6, 42, 0.35);
+            border-radius: 10px;
+        }
+
+        /* Content Styling */
+        .policy-body h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 35px 0 15px;
+        }
+
+        .policy-body h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-body h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 22px 0 10px;
+        }
+
+        .policy-body p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .policy-body ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 18px;
+        }
+
+        .policy-body ul li {
+            font-size: 0.9rem;
+            padding: 3px 0;
+        }
+
+        .policy-body strong {
+            font-weight: 700;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 768px) {
+            header {
+                padding: 25px 16px 5px;
+            }
+
+            header h1 {
+                font-size: 0.9rem;
+            }
+
+            .logo {
+                max-width: 110px;
+                margin-top: -5px;
+            }
+
+            .page-wrapper {
+                padding: 5px 16px 20vh;
+            }
+
+            .policy-body {
+                padding: 20px 18px;
+                width: 100%;
+            }
+
+            .policy-body p,
+            .policy-body ul li {
+                font-size: 0.82rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <img src="logo.png" alt="Lusso Saigon Logo" class="logo">
+            <h1>Chính Sách Bảo Mật Thông Tin Khách Hàng</h1>
+        </header>
+
+        <main class="policy-body" id="policy-content">
+
+            <h2>I. MỤC ĐÍCH VÀ PHẠM VI THU THẬP THÔNG TIN</h2>
+            <p>1. Chính Sách Bảo Mật Thông Tin Khách Hàng này ("Chính Sách") áp dụng đối với các cá nhân, tổ chức tham gia truy cập và sử dụng website lussosaigon.vn ("Khách Hàng") của Công ty Cổ phần địa ốc Sài Gòn - KL ("SGKL"). Chính sách đảm bảo phù hợp với Nghị định số 13/2023/NĐ-CP của Chính phủ ngày 17/4/2023 (có hiệu lực từ 1/7/2023) về bảo vệ dữ liệu cá nhân, và/hoặc được cập nhật theo (các) quy định pháp luật liên quan, thay thế hoặc sửa đổi, bổ sung tại từng thời kỳ, nếu có.</p>
+            <p>2. Dữ liệu cá nhân là thông tin dưới dạng ký hiệu, chữ viết, chữ số, hình ảnh, âm thanh hoặc dạng tương tự trên môi trường điện tử gắn liền với một con người cụ thể hoặc giúp xác định một con người cụ thể. Dữ liệu cá nhân bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm ("Thông Tin Khách Hàng").</p>
+            <p>3. Chính Sách này mô tả cách thức SGKL tiếp nhận, tổng hợp, lưu giữ, sử dụng và bảo vệ Thông Tin Của Khách Hàng trong quá trình hoạt động, kinh doanh và các vấn đề khác có liên quan theo quy định của pháp luật.</p>
+            <p>4. Bằng việc cung cấp thông tin trên website lussosaigon.vn, Khách Hàng thừa nhận đã đọc, hiểu và đồng ý với Chính Sách này và các thay đổi (nếu có) trong từng thời kỳ.</p>
+            <p>5. Toàn bộ các thông tin được công bố công khai trên website lussosaigon.vn có thể được SGKL cập nhật, sửa đổi, bổ sung hoặc thay thế tùy từng thời điểm (nếu có).</p>
+
+            <h2>II. THÔNG TIN KHÁCH HÀNG VÀ PHẠM VI SỬ DỤNG THÔNG TIN</h2>
+            <p>1. Để SGKL có thể xử lý Thông Tin Khách Hàng cho các mục đích nêu tại Khoản 2 Mục II của Chính sách này, SGKL có thể xử lý loại Thông Tin Khách Hàng sau:</p>
+
+            <h3>1.1 Dữ Liệu Cá Nhân cơ bản bao gồm:</h3>
+            <ul>
+                <li>(i) Họ, chữ đệm và tên khai sinh, tên gọi khác (nếu có);</li>
+                <li>(ii) Ngày, tháng, năm sinh; ngày, tháng, năm chết hoặc mất tích;</li>
+                <li>(iii) Giới tính;</li>
+                <li>(iv) Nơi sinh, nơi đăng ký khai sinh, nơi thường trú, nơi tạm trú, nơi ở hiện tại, quê quán, địa chỉ liên hệ;</li>
+                <li>(v) Quốc tịch;</li>
+                <li>(vi) Hình ảnh của cá nhân; thông tin có được từ các hệ thống an ninh, kể cả bản ghi lại hình ảnh của Khách Hàng trên hệ thống máy quay, camera giám sát tại các địa điểm kinh doanh/giao dịch của SGKL;</li>
+                <li>(vii) Số điện thoại, số chứng minh nhân dân, số căn cước công dân, số định danh cá nhân, số hộ chiếu, số giấy phép lái xe, số biển số xe, số mã số thuế cá nhân, số bảo hiểm xã hội, số thẻ bảo hiểm y tế;</li>
+                <li>(viii) Nghề nghiệp, nơi làm việc;</li>
+                <li>(ix) Tình trạng hôn nhân;</li>
+                <li>(x) Thông tin về mối quan hệ gia đình (cha mẹ, con cái);</li>
+                <li>(xi) Thông tin về tài khoản số của cá nhân; Thông Tin Khách Hàng phản ánh sở thích, lịch sử hoạt động trên không gian mạng;</li>
+                <li>(xii) Các thông tin khác gắn liền với một con người cụ thể hoặc giúp xác định một con người cụ thể không thuộc phạm vi Dữ Liệu Cá Nhân nhạy cảm theo quy định tại Khoản 1.2 dưới đây.</li>
+            </ul>
+
+            <h3>1.2 Dữ Liệu Cá Nhân nhạy cảm bao gồm các dữ liệu chính sau:</h3>
+            <ul>
+                <li>(i) Quan điểm chính trị, quan điểm tôn giáo;</li>
+                <li>(ii) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao gồm thông tin về nhóm máu;</li>
+                <li>(iii) Thông tin liên quan đến nguồn gốc chủng tộc, nguồn gốc dân tộc;</li>
+                <li>(iv) Thông tin về đặc điểm di truyền được thừa hưởng hoặc có được của cá nhân;</li>
+                <li>(v) Thông tin về thuộc tính vật lý, đặc điểm sinh học riêng của cá nhân;</li>
+                <li>(vi) Dữ liệu về tội phạm, hành vi phạm tội được thu thập, lưu trữ bởi các cơ quan thực thi pháp luật;</li>
+                <li>(vii) Thông tin về tài khoản ngân hàng của Khách Hàng;</li>
+                <li>(viii) Dữ liệu về vị trí của Khách hàng được xác định qua dịch vụ định vị;</li>
+                <li>(ix) Dữ Liệu Cá Nhân khác được pháp luật quy định là đặc thù và cần có biện pháp bảo mật cần thiết.</li>
+            </ul>
+
+            <h3>2. SGKL sử dụng Thông Tin Khách Hàng vào các mục đích sau:</h3>
+            <p>2.1 Liên lạc, hỗ trợ và giải quyết các thắc mắc/khiếu nại của Khách Hàng.</p>
+            <p>2.2 Gửi các thông báo, giới thiệu sản phẩm, giới thiệu dịch vụ, thông tin mang tính thương mại và trao đổi thông tin giữa Khách Hàng với SGKL hoặc ngược lại, thông qua email/ số điện thoại mà Khách Hàng đã cung cấp.</p>
+            <p>2.3 Nghiên cứu thị trường, tổng hợp, phân tích thông tin chung của Khách Hàng (ví dụ độ tuổi trung bình, khu vực địa lý…), thông tin chi tiết chỉ được dùng để phục vụ công việc thống kê và xây dựng các Chính sách Chăm sóc Khách Hàng.</p>
+            <p>2.4 Nâng cao chất lượng sản phẩm, dịch vụ của SGKL bao gồm nhưng không giới hạn: (i) Cung cấp thông tin mà Khách Hàng đã yêu cầu hoặc SGKL thấy hữu ích cho Khách Hàng; (ii) Cải tiến công nghệ, giao diện trang thông tin điện tử, mạng xã hội, ứng dụng đảm bảo tiện lợi cho Khách Hàng; (iii) Quản lý tài khoản khách hàng và các chương trình khách hàng thân thiết; (iv) Thống kê, phân tích dữ liệu để nghiên cứu, xây dựng, phát triển và cải tiến sản phẩm, dịch vụ; nâng cao trải nghiệm Khách Hàng; (v) Phát triển, cung cấp sản phẩm, dịch vụ mới được cá nhân hóa theo nhu cầu, điều kiện thực tế của Khách Hàng.</p>
+            <p>2.5 Các mục đích khác được sự đồng ý của Khách Hàng hoặc theo quy định của pháp luật.</p>
+
+            <h2>III. CÁCH THỨC XỬ LÝ VÀ THỜI GIAN LƯU TRỮ THÔNG TIN</h2>
+            <p><strong>1. Cách thức thu thập Thông Tin Khách Hàng như sau:</strong></p>
+            <p>1.1 Từ các trang thông tin điện tử, ứng dụng của SGKL: Thông Tin Khách Hàng được thu thập khi Khách Hàng cung cấp thông tin bao gồm nhưng không giới hạn bởi các hình thức như việc Khách Hàng điền vào các biểu mẫu được đưa trên các trang thông tin điện tử, ứng dụng của SGKL.</p>
+            <p>1.2 Từ việc cung cấp các sản phẩm, dịch vụ, thực hiện các nghĩa vụ theo hợp đồng, thỏa thuận của SGKL: Thông Tin Khách Hàng được thu thập khi Khách Hàng mua, đăng ký sử dụng, sử dụng bất kỳ sản phẩm, dịch vụ, ký kết hợp đồng với SGKL.</p>
+            <p>1.3 Từ các trao đổi, liên lạc với Khách Hàng: Thông Tin Khách Hàng được thu thập thông qua tương tác giữa SGKL và Khách Hàng (gặp trực tiếp, qua thư, điện thoại, trực tuyến, hệ thống tổng đài, liên lạc điện tử hoặc bất kỳ phương tiện nào khác) bao gồm cả các cuộc khảo sát;</p>
+            <p>1.4 Từ mạng xã hội: Là các mạng xã hội của SGKL và/hoặc các mạng xã hội do SGKL hợp tác với các đối tác;</p>
+            <p>1.5 Từ các thiết bị ghi âm, ghi hình: được đặt tại các cửa hàng, điểm kinh doanh hoặc nơi thực hiện một phần hoặc toàn bộ hoạt động kinh doanh của SGKL mà Khách Hàng gặp, xuất hiện hoặc tương tác với SGKL;</p>
+            <p>1.6 Từ các tương tác hoặc các công nghệ thu thập dữ liệu tự động: SGKL có thể thu thập thông tin được ghi tự động từ kết nối:</p>
+            <ul>
+                <li>(i) Cookie, thẻ pixel và các công nghệ tương tự khác;</li>
+                <li>(ii) Bất kỳ công nghệ nào có khả năng theo dõi hoạt động cá nhân trên các thiết bị hoặc trang thông tin điện tử;</li>
+                <li>(iii) Thông tin dữ liệu khác được cung cấp bởi một thiết bị;</li>
+                <li>(iv) Các phương tiện khác.</li>
+            </ul>
+            <p>SGKL có thể thu thập Thông Tin Khách Hàng thông qua các nguồn thông tin công khai, chính thống hoặc thông qua việc nhận chia sẻ dữ liệu cần thiết từ công ty mẹ, công ty con, công ty liên kết, đối tác trong quá trình hợp tác với SGKL và các cách thức thu thập khác (nếu có) phù hợp với quy định của pháp luật tại từng thời kỳ.</p>
+
+            <p><strong>2. Cách thức lưu trữ:</strong></p>
+            <p>Thông tin của Khách Hàng sẽ được lưu trữ và bảo mật trên máy chủ của lussosaigon.vn với thời gian lưu trữ theo quy định của pháp luật và quy định của SGKL từng thời kỳ.</p>
+
+            <h2>IV. NHỮNG NGƯỜI HOẶC TỔ CHỨC CÓ THỂ ĐƯỢC TIẾP CẬN VỚI THÔNG TIN CỦA KHÁCH HÀNG ("Bên Có Quyền Tiếp Cận")</h2>
+            <p>1. Trong phạm vi pháp luật cho phép, Khách Hàng hiểu rõ rằng SGKL có thể chia sẻ Thông Tin Khách Hàng nhằm các mục đích như nêu tại Chính sách này với các tổ chức, cá nhân dưới đây:</p>
+            <p>1.1 Công ty con, công ty liên kết, các công ty trong mô hình nhóm SGKL, chi nhánh và các đơn vị có liên quan khác.</p>
+            <p>1.2 Cá nhân, tổ chức có thẩm quyền theo quy định của pháp luật hoặc được quyền tiếp cận thông tin với sự đồng ý của Khách Hàng.</p>
+            <p>Việc chia sẻ dữ liệu sẽ được thực hiện theo đúng trình tự, cách thức và quy định pháp luật hiện hành. Các bên tiếp nhận Thông Tin Khách Hàng có nghĩa vụ bảo mật Thông Tin Khách Hàng phù hợp với Chính sách này, các quy định nội bộ, tiêu chuẩn về bảo vệ Thông Tin Khách Hàng của SGKL và quy định pháp luật hiện hành.</p>
+            <p>2. SGKL có thể phải chia sẻ Thông Tin Khách Hàng với cơ quan nhà nước có thẩm quyền theo quy định pháp luật.</p>
+
+            <h2>V. ĐỊA CHỈ CỦA ĐƠN VỊ THU THẬP VÀ QUẢN LÝ THÔNG TIN</h2>
+            <p>Thửa đất số 1186-1187, tờ bản đồ số 6-2 (D2), Khu phố Bình Đức, Phường Bình Hòa, Thành phố Thuận An, tỉnh Bình Dương (nay là Phường Bình Hòa, Thành phố Hồ Chí Minh).</p>
+
+            <h2>VI. PHƯƠNG THỨC VÀ CÔNG CỤ ĐỂ KHÁCH HÀNG TIẾP CẬN VÀ CHỈNH SỬA DỮ LIỆU CÁ NHÂN CỦA MÌNH</h2>
+            <p>Trong trường hợp Khách Hàng có nhu cầu tiếp cận và chỉnh sửa dữ liệu cá nhân, Khách Hàng có thể liên hệ với SGKL theo (các) phương thức nêu tại Mục V Chính Sách này.</p>
+
+            <h2>VII. CAM KẾT BẢO MẬT THÔNG TIN CÁ NHÂN KHÁCH HÀNG</h2>
+            <p>1. SGKL không cung cấp Thông Tin Khách Hàng cho bất kỳ bên thứ ba nào trừ trường hợp theo yêu cầu của Khách Hàng hoặc phải thực hiện theo yêu cầu của các cơ quan Nhà nước có thẩm quyền, hoặc theo quy định của pháp luật, hoặc cung cấp cho Bên Có Quyền Tiếp Cận, hoặc khi việc cung cấp thông tin đó là cần thiết để SGKL hoặc đối tác cung cấp dịch vụ/tiện ích/ưu đãi cho Khách Hàng.</p>
+            <p>2. SGKL được miễn trừ trách nhiệm trong trường hợp Hệ thống xử lý dữ liệu, phần mềm, hệ thống truyền tín hiệu gặp sự cố, bị lỗi, bị tấn công hoặc vì bất kỳ lý do khách quan nào khác nằm ngoài khả năng kiểm soát của SGKL.</p>
+
+            <h2>VIII. QUYỀN VÀ NGHĨA VỤ CỦA KHÁCH HÀNG</h2>
+            <h3>1. Quyền của Khách Hàng:</h3>
+            <p>1.1 Quyền được biết về hoạt động xử lý thông tin của mình, trừ trường hợp pháp luật có quy định khác.</p>
+            <p>1.2 Quyền đồng ý hoặc không đồng ý cho phép xử lý thông tin của mình, trừ trường hợp pháp luật quy định khác.</p>
+            <p>1.3 Quyền truy cập để xem, chỉnh sửa hoặc yêu cầu chỉnh sửa Thông Tin Khách Hàng của mình, trừ trường hợp pháp luật có quy định khác.</p>
+            <p>1.4 Quyền rút lại sự đồng ý.</p>
+            <p>1.5 Quyền xóa dữ liệu.</p>
+            <p>1.6 Quyền hạn chế Thông Tin Khách Hàng của mình theo quy định pháp luật.</p>
+            <p>1.7 Quyền yêu cầu cung cấp cho bản thân Dữ Liệu Cá Nhân của mình, trừ trường hợp pháp luật có quy định khác.</p>
+            <p>1.8 Quyền phản đối xử lý dữ liệu.</p>
+            <p>1.9 Quyền khiếu nại, tố cáo, khởi kiện.</p>
+            <p>1.10 Quyền yêu cầu bồi thường thiệt hại.</p>
+            <p>1.11 Quyền tự bảo vệ.</p>
+            <p>Khách Hàng có thể thực hiện các quyền này bằng việc đưa ra yêu cầu cho SGKL. Phiếu yêu cầu phải gửi cho SGKL và có các nội dung cơ bản như thông tin của người yêu cầu, nội dung yêu cầu chi tiết (ví dụ như loại dữ liệu cần cung cấp, cần xóa... tên văn bản, hồ sơ nếu có), lý do, mục đích khi đưa ra yêu cầu, các thông tin có liên quan phụ thuộc vào đặc thù của yêu cầu (ví dụ như tài liệu yêu cầu cung cấp cần ở dạng file hay giấy tờ, địa chỉ nhận tài liệu…). Mọi chi phí (nếu có) phát sinh từ việc thực hiện các yêu cầu như nêu tại đây bao gồm nhưng không giới hạn như chi phí in ấn, sao chụp, phí bưu điện, phí chuyển phát nhanh để gửi dữ liệu sẽ do người yêu cầu chịu.</p>
+            <p>SGKL sẽ xử lý các yêu cầu của Khách Hàng phù hợp với quy định của pháp luật và cân nhắc quyền lợi chính đáng của Khách Hàng. Tuy nhiên, trong trường hợp Khách Hàng rút lại sự đồng ý của mình, yêu cầu xóa dữ liệu và/hoặc thực hiện các quyền có liên quan khác đối với bất kỳ hoặc tất cả các Thông Tin Khách Hàng làm ảnh hưởng đến khả năng cung cấp/duy trì các sản phẩm, dịch vụ của SGKL đối với Khách Hàng hoặc duy trì quan hệ hợp đồng, tuỳ thuộc vào tính chất yêu cầu của Thông Tin Khách Hàng, SGKL có thể sẽ xem xét và quyết định về việc không tiếp tục cung cấp các sản phẩm, dịch vụ của SGKL cho Khách Hàng hoặc chấm dứt quan hệ hợp đồng giữa SGKL và Khách Hàng. Các hành vi được thực hiện bởi Khách Hàng theo quy định này sẽ được xem là sự đơn phương chấm dứt từ phía Khách Hàng cho bất kỳ mối quan hệ nào giữa Khách Hàng với SGKL và hoàn toàn có thể dẫn đến sự vi phạm nghĩa vụ hoặc các cam kết theo hợp đồng giữa Khách Hàng với SGKL, đồng thời SGKL bảo lưu các quyền và biện pháp khắc phục hợp pháp của SGKL trong những trường hợp đó. Theo đó, SGKL sẽ không chịu trách nhiệm đối với Khách Hàng cho bất kỳ tổn thất nào phát sinh và các quyền hợp pháp của SGKL sẽ được bảo lưu một cách đầy đủ. Bằng nỗ lực hợp lý, SGKL sẽ thực hiện yêu cầu hợp pháp và hợp lệ từ Khách Hàng trong thời gian phù hợp với quy định của pháp luật. Tuy nhiên, vì mục đích bảo mật, SGKL có thể yêu cầu Khách Hàng xác minh danh tính trước khi xử lý yêu cầu của Khách Hàng.</p>
+            <p>SGKL có quyền từ chối thực hiện các yêu cầu của Khách Hàng trong một số trường hợp nhất định, bao gồm nhưng không giới hạn ở trường hợp: (i) Khách Hàng không thực hiện đúng trình tự, thủ tục do SGKL hướng dẫn trong đó nội dung yêu cầu thiếu thông tin hoặc không hợp lệ; (ii) Khách Hàng không cung cấp hoặc cung cấp không đầy đủ các giấy tờ, tài liệu để xác minh danh tính; hoặc (iii) trong trường hợp SGKL đánh giá có dấu hiệu gian lận, vi phạm về bảo vệ Thông Tin Khách Hàng; hoặc (iv) Quy định của pháp luật không cho phép thực hiện yêu cầu của Khách Hàng.</p>
+
+            <h3>2. Nghĩa vụ của Khách Hàng:</h3>
+            <p>2.1 Tự bảo vệ Thông Tin Khách Hàng; yêu cầu các tổ chức, cá nhân khác có liên quan bảo vệ Thông Tin Khách Hàng của mình. Thông báo kịp thời cho SGKL khi phát hiện thấy có sai sót, nhầm lẫn, rò rỉ về Thông Tin Khách Hàng hoặc nghi ngờ Thông Tin Khách Hàng đang bị xâm phạm.</p>
+            <p>2.2 Tôn trọng, bảo vệ dữ liệu cá nhân của người khác.</p>
+            <p>2.3 Cung cấp đầy đủ, chính xác Thông Tin Khách Hàng khi đồng ý cho phép xử lý Thông Tin Khách Hàng. Nếu có bất kỳ thông tin sai lệch nào, Khách Hàng sẽ tự chịu bằng chi phí của mình trong trường hợp thông tin đó làm ảnh hưởng hoặc hạn chế quyền lợi của Khách Hàng.</p>
+            <p>2.4 Thực hiện quy định pháp luật về bảo vệ dữ liệu cá nhân và tham gia phòng, chống các hành vi vi phạm quy định về bảo vệ dữ liệu cá nhân.</p>
+            <p>2.5 Các trách nhiệm khác theo quy định pháp luật.</p>
+
+            <h2>IX. ĐIỀU KHOẢN CHUNG</h2>
+            <p>1. Trong trường hợp Khách Hàng có nhu cầu giải đáp vướng mắc, khiếu nại, lựa chọn liên quan đến mục đích và phạm vi sử dụng Thông Tin Khách Hàng theo quy định của pháp luật, Khách Hàng có thể liên hệ với SGKL theo (các) phương thức nêu tại Mục V Chính Sách này.</p>
+            <p>2. Chính Sách này được điều chỉnh bởi pháp luật Việt Nam. Trong trường hợp pháp luật Việt Nam có sự thay đổi hoặc ban hành quy định mới liên quan đến bảo vệ dữ liệu cá nhân, Chính Sách này sẽ được SGKL tự động điều chỉnh để bảo đảm phù hợp với quy định pháp luật hiện hành. Các sửa đổi, bổ sung của Chính Sách có hiệu lực kể từ thời điểm quy định pháp luật mới có hiệu lực thi hành, trừ khi SGKL có thông báo khác.</p>
+            <p>Mọi tranh chấp phát sinh từ hoặc liên quan tới Chính Sách này trước tiên sẽ được giải quyết thông qua thương lượng giữa Các Bên trên tinh thần thiện chí. Trong trường hợp Các Bên không thể giải quyết tranh chấp thông qua thương lượng trong vòng 30 (ba mươi) ngày kể từ ngày một Bên thông báo cho Bên còn lại về tranh chấp, hoặc một thời hạn khác theo thỏa thuận giữa Các Bên, thì tranh chấp sẽ được giải quyết bằng Trung Tâm Trọng Tài Quốc Tế Việt Nam bên cạnh Phòng Thương Mại và Công Nghiệp Việt Nam ("VIAC") theo Quy tắc Trọng tài của VIAC. Việc phân xử sẽ được thực hiện ở VIAC tại Thành phố Hồ Chí Minh, Việt Nam. Ngôn ngữ sử dụng trong thủ tục tố tụng là tiếng Việt và Luật áp dụng là Luật Việt Nam.</p>
+
+        </main>
+    </div>
+
+    <script>
+        // Allow scrolling the box from anywhere on the page
+        window.addEventListener('wheel', (e) => {
+            const box = document.getElementById('policy-content');
+            if (box) {
+                box.scrollTop += e.deltaY;
+            }
+        }, { passive: true });
+
+        // Touch support for mobile
+        let touchStartY = 0;
+        window.addEventListener('touchstart', (e) => {
+            touchStartY = e.touches[0].pageY;
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+            const box = document.getElementById('policy-content');
+            if (box) {
+                const touchY = e.touches[0].pageY;
+                const deltaY = touchStartY - touchY;
+                box.scrollTop += deltaY;
+                touchStartY = touchY;
+            }
+        }, { passive: true });
+    </script>
+</body>
+</html>
